@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleslogin.css">
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <h1>Formulario de registro </h1>
+
+    <form method="post" action="./validar.php">
+        <label for="user">Username: </label><br>
+        <input type="text" name="user" required pattern="[a-zA-Z\s]+" placeholder="Username" 
+        title="Debes poner solo letras y espacios"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" required pattern="[^\n\r]*$" placeholder="Password"
+        title="Tienes que poner tu contraseña"><br>
+        <label for="edad">Edad: </label><br>
+        <input type="text" name="edad" required pattern="^(1[89]|[2-9]\d|\d{3,})$" placeholder="Edad"
+        title="Solo puedes poner numeros y tienes que ser mayor de edad"><br>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>
