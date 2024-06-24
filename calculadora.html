@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora basica</h1>
+    <form action="./calc.php" method="POST">
+        <label for="num1">Ingrese el primer numero: </label><br>
+        <input type="number" name="num1" required placeholder="1"><br>
+        <label for="num2">Ingrese el segundo valor: </label><br>
+        <input type="number" name="num2" required placeholder="2"><br>
+        <select name="op" id="op" required>
+            <option value="suma">Suma</option>
+            <option value="resta">Resta</option>
+            <option value="multiplicacion">Multiplicacion</option>
+            <option value="division">Division</option>
+        </select>
+        <input type="submit" value="Enivar">
+        
+    </form>
+    
+</body>
+</html>
